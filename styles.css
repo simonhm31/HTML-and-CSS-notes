@@ -3,10 +3,17 @@ html {
     text-align: center;
 }
 
-h1 {
-    background-color: aqua;
+.title {
+    background-color: beige;
+    border: 1px solid black;
 }
 
+
+.hidden-elements {
+    background-color: beige;
+    border: 1px solid black;
+
+}
 
 
 
