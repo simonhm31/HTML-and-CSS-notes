@@ -52,14 +52,55 @@
         <p><code>box-sizing</code> has two options, <code>content-box</code> and <code>border-box</code></p>
         <p>For example this box has the trait <code>box-sizing: content-box</code> (which is the default setting)</p>
         <div class="box-container">
-            <div class="box"></div>
+            <div class="box1"></div>
         </div>
             <p>And this box has the trait <code>box-sizing: border-box</code></p>
         <div class="box-container">
             <div class="box2"></div>
         </div>
-       
+       <p>As you can see, the boxes are different sizes because the <code>box-sizing</code> CSS
+        keyword impacts the width and height</code></p>
 
+        <h2>Positioning:</h2>
+        <p>The default value for the <code>position</code> CSS keyword is "static".</p>
+        <p>These boxes all have <code>position: static</code></p>
+        <div class="boxes">
+            <div class="box box-1"></div>
+            <div class="box box-2"></div>
+            <div class="box box-3"></div>
+        </div>
+        <p>These boxes all have <code>position: relative</code></p>
+        <p>With <code>position: relative</code> we can position elements relative to their original (or static) position</p>
+        <p>This is done with the <code>left, right, top, and bottom</code> keywords</p>
+        <div class="boxes">
+            <div class="box box2-1"></div>
+            <div class="box box2-2"></div>
+            <div class="box box2-3"></div>
+        </div>
+        <p>These boxes all have <code>position: absolute</code></p>
+        <p>This makes child elements invisible to their parent container. <br>
+        This positions elements relative to their container ONLY IF the parent container has the <code>position: relative</code> property</code></p>
+        <p>If the container has <code>position:static</code> the child elements won't appear at all</p>
+        <p>This is done with the <code>left, right, top, and bottom</code> keywords</p>
+        <div class="boxes">
+            <div class="box box3-1"></div>
+            <div class="box box3-2"></div>
+            <div class="box box3-3"></div>
+        </div>
+        <p>These boxes all have <code>position: fixed</code></p>
+        <p>This positions elements relative to the viewport window</p>
+        <p>For example, the gold box is way up in the top left corner of this page, and the red and blue boxes are in the top right.</p>
+        <p>If you want something to stay on the viewport screen no matter what, this is how to do it.</p>
+        <div class="boxes">
+            <div class="box box4-1"></div>
+            <div class="box box4-2"></div>
+            <div class="box box4-3"></div>
+        </div>
+
+        <h2>Floating Elements:</h2>
+        <p><code>float:none</code> is the default </p>
+
+        <h2>Flexbox:</h2>
 
 </body>
 </html>

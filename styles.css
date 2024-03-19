@@ -9,26 +9,21 @@ html {
 .title, .hidden-elements {
     background-color: beige;
     border: 1px solid black;
-    
-    
-    
 }
-
 
 .box-container {
     display: flex;
     justify-content: center;
     align-items: center; /* Add this line to vertically center */
-    
 }
-.box {
+
+.box1 {
     width: 100px;
     height: 100px;
     background-color: gold;
     padding: 10px;
     border: 10px solid orange;
-    box-sizing: content-box;
-    
+    box-sizing: content-box;  
 }
 
 .box2 {
@@ -40,9 +35,102 @@ html {
     box-sizing: border-box;
 }
 
+.boxes {
+    border: 3px solid lightgrey;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.box{
+    height: 5rem;
+    width: 5rem;
+}
+
+.box-1 {
+    background-color: gold;
+    position: static;
+}
+
+.box-2 {
+    background-color: tomato;
+    position: static;
+}
+
+.box-3 {
+    background-color: dodgerblue;
+    position: static;
+}
+
+.box2-1 {
+    background-color: gold;
+    position: relative;
+    right: 5rem;
+    top: 10rem;
+}
+
+.box2-2 {
+    background-color: tomato;
+    position: relative;
+    right: -20rem;
+    bottom: 100px;
+}
+
+.box2-3 {
+    background-color: dodgerblue;
+    position: relative;
+    left: 60rem;
+    bottom: 130px;
+}
+
+.box3-1 {
+    background-color: gold;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.box3-2 {
+    background-color: tomato;
+    position: absolute;
+    bottom: -20px;
+    left: 25px;
+    
+
+}
+
+.box3-3 {
+    background-color: dodgerblue;
+    position: absolute;
+    top: 10px;
+    left: 70rem;
+
+}
+
+.box4-1 {
+    background-color: gold;
+    position: fixed;
+    top: 0px;
+    left: 0px;
 
 
+}
 
+.box4-2 {
+    background-color: tomato;
+    position: fixed;
+    top: 0rem;
+    right: 0px;
+
+}
+
+.box4-3 {
+    background-color: dodgerblue;
+    position: fixed;
+    top: 0rem;
+    right: 0px;
+
+
+}
 
 
 
