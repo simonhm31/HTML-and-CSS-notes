@@ -126,6 +126,43 @@ html {
 
 .flexContainer {
     border: 3px solid lightgreen;
+    display: flex;
+}
+
+.flexContainer2 {
+    border: 3px solid lightgreen;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flexContainer3 {
+    border: 3px solid lightgreen;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flexContainer4 {
+    border: 3px solid lightgreen;
+    display: flex;
+    justify-content: center;
+}
+
+.flexContainer5 {
+    border: 3px solid lightgreen;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flexContainer6 {
+    border: 3px solid lightgreen;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexContainer7 {
+    border: 3px solid lightgreen;
+    display: flex;
+    justify-content: space-around;
 }
 
 .flexBox {

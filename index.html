@@ -101,6 +101,9 @@
         <p><code>float:none</code> is the default </p>
 
         <h2>Flexbox:</h2>
+        <p>To use flexbox, use <code>display:flex</code> in the parent container</p>
+        <p>The direction can be either <code>flex-direction:row</code> or <code>flex-direction:column</code></p>
+        <p>The default is <code>flex-direction:row</code></p>
         <div class="flexContainer">
             <div class="flexBox">1</div>
             <div class="flexBox">2</div>
@@ -108,5 +111,60 @@
             <div class="flexBox">4</div>
             <div class="flexBox">5</div>
         </div>
+        <p>We can also use <code>flex-direction: row-reverse</code></p>
+        <div class="flexContainer2">
+            <div class="flexBox">1</div>
+            <div class="flexBox">2</div>
+            <div class="flexBox">3</div>
+            <div class="flexBox">4</div>
+            <div class="flexBox">5</div>
+        </div>
+        <p><code>justify-content</code> is used to position elements along the x axis</p>
+        <p><code>align-items</code> is used to position elements along the y axis</p>
+        <p>For example, <code>justify-content:flex-end</code> creates</p>
+        <div class="flexContainer3">
+            <div class="flexBox">1</div>
+            <div class="flexBox">2</div>
+            <div class="flexBox">3</div>
+            <div class="flexBox">4</div>
+            <div class="flexBox">5</div>
+        </div>
+        <p>Whereas <code>justify-content:center</code> creates</p>
+        <div class="flexContainer4">
+            <div class="flexBox">1</div>
+            <div class="flexBox">2</div>
+            <div class="flexBox">3</div>
+            <div class="flexBox">4</div>
+            <div class="flexBox">5</div>
+        </div>
+        <p>For <code>justify-content</code> and <code>align-items:</code></p>
+        <p>We can also use the <code>space-evenly, space-between, space-around</code> </p>
+        <code>justify-content: space-evenly</code>
+        <div class="flexContainer5">
+            <div class="flexBox">1</div>
+            <div class="flexBox">2</div>
+            <div class="flexBox">3</div>
+            <div class="flexBox">4</div>
+            <div class="flexBox">5</div>
+        </div>
+        <code>justify-content: space-between</code>
+        <div class="flexContainer6">
+            <div class="flexBox">1</div>
+            <div class="flexBox">2</div>
+            <div class="flexBox">3</div>
+            <div class="flexBox">4</div>
+            <div class="flexBox">5</div>
+        </div>
+        <code>justify-content: space-around</code>
+        <div class="flexContainer7">
+            <div class="flexBox">1</div>
+            <div class="flexBox">2</div>
+            <div class="flexBox">3</div>
+            <div class="flexBox">4</div>
+            <div class="flexBox">5</div>
+        </div>
+        <p><code>justify-content</code> and <code>align-items</code> are COMPLETELY different that <code>flex-direction:row</code> or <code>flex-direction:column</code></p>
+        <p>All <code>flex-direction</code> does is make the elements go horizontal or vertical</p>
+        <p>This is different than <code>justify-content</code> and <code>align-items</code> where there are MANY options for how exactly to position the elements </p>
 </body>
 </html>
