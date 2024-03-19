@@ -1,6 +1,8 @@
 html {
     margin: auto;
+    display: flex;
     text-align: center;
+    justify-content: center;
 }
 
 
@@ -9,10 +11,34 @@ html {
     border: 1px solid black;
     
     
+    
 }
 
 
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Add this line to vertically center */
+    
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    padding: 10px;
+    border: 10px solid orange;
+    box-sizing: content-box;
+    
+}
 
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    padding: 10px;
+    border: 10px solid orange;
+    box-sizing: border-box;
+}
 
 
 
