@@ -124,6 +124,17 @@ html {
     right: 0px;
 }
 
+.flexContainer {
+    border: 3px solid lightgreen;
+}
+
+.flexBox {
+    height: 5rem;
+    width: 5rem;
+    background-color: beige;
+    margin: 1rem;
+    border: 1px solid black;
+}
 
 
 
