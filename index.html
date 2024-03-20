@@ -166,5 +166,59 @@
         <p><code>justify-content</code> and <code>align-items</code> are COMPLETELY different that <code>flex-direction:row</code> or <code>flex-direction:column</code></p>
         <p>All <code>flex-direction</code> does is make the elements go horizontal or vertical</p>
         <p>This is different than <code>justify-content</code> and <code>align-items</code> where there are MANY options for how exactly to position the elements </p>
+        <p>For example, to position the boxes in the center of a container we can use <a style="font-style: italic;">BOTH </a><code>justify-content</code> and <code>align-items</code> </p>
+        <div class="flexContainer8">
+            <div class="flexBox">1</div>
+            <div class="flexBox">2</div>
+            <div class="flexBox">3</div>
+            <div class="flexBox">4</div>
+            <div class="flexBox">5</div>
+        </div>
+        <p><code>align-content</code> is only used when there are multiple lines of elements in a container</p>
+        <p>To add multiple lines of elements, you might think that we can just add a bunch of boxes like this. However, this doesn't make multiple lines.<br>
+        It just makes the elements smaller</p>
+        <div class="flexContainer9">
+            <div class="flexBox">1</div>
+            <div class="flexBox">2</div>
+            <div class="flexBox">3</div>
+            <div class="flexBox">4</div>
+            <div class="flexBox">5</div>
+            <div class="flexBox">6</div>
+            <div class="flexBox">7</div>
+            <div class="flexBox">8</div>
+            <div class="flexBox">9</div>
+            <div class="flexBox">1</div>
+            <div class="flexBox">2</div>
+            <div class="flexBox">3</div>
+            <div class="flexBox">4</div>
+            <div class="flexBox">5</div>
+            <div class="flexBox">6</div>
+            <div class="flexBox">7</div>
+            <div class="flexBox">8</div>
+            <div class="flexBox">9</div>
+        </div>
+        <p>To create multiple lines we have to use <code>flex-wrap</code></p>
+        <p>Using <code>flex-wrap:wrap</code> we get</p>
+        <div class="flexContainer10">
+            <div class="flexBox">1</div>
+            <div class="flexBox">2</div>
+            <div class="flexBox">3</div>
+            <div class="flexBox">4</div>
+            <div class="flexBox">5</div>
+            <div class="flexBox">6</div>
+            <div class="flexBox">7</div>
+            <div class="flexBox">8</div>
+            <div class="flexBox">9</div>
+            <div class="flexBox">1</div>
+            <div class="flexBox">2</div>
+            <div class="flexBox">3</div>
+            <div class="flexBox">4</div>
+            <div class="flexBox">5</div>
+            <div class="flexBox">6</div>
+            <div class="flexBox">7</div>
+            <div class="flexBox">8</div>
+            <div class="flexBox">9</div>
+        </div>
+        <p>Now, because there are multiple lines we can use <code>align-content</code></p>
 </body>
 </html>

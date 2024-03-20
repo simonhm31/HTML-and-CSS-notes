@@ -1,8 +1,11 @@
-html {
+body {
     margin: auto;
     display: flex;
     text-align: center;
     justify-content: center;
+    flex-direction: column;
+    width: 70%;
+
 }
 
 
@@ -164,6 +167,33 @@ html {
     display: flex;
     justify-content: space-around;
 }
+
+.flexContainer8 {
+    border: 3px solid lightgreen;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexContainer9 {
+    border: 3px solid lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 25rem;
+}
+
+.flexContainer10 {
+    border: 3px solid lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 25rem;
+}
+
 
 .flexBox {
     height: 5rem;
