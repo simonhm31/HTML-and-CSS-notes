@@ -210,12 +210,18 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    align-content: center;
     height: 35rem;
 }
 
+.flexBox1 {
+    align-self: flex-start;
+    background-color: aquamarine;
+}
 
-
+.flexBox2 {
+    align-self: flex-end;
+    background-color: aquamarine;
+}
 
 .flexBox {
     height: 5rem;
@@ -224,7 +230,6 @@ body {
     margin: 1rem;
     border: 1px solid black;
 }
-
 
 
 
