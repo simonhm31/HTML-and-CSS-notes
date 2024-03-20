@@ -204,6 +204,18 @@ body {
     height: 35rem;
 }
 
+.flexContainer12 {
+    border: 3px solid lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 35rem;
+}
+
+
+
 
 .flexBox {
     height: 5rem;
