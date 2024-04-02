@@ -228,6 +228,14 @@ body {
     border: 1px solid black;
 }
 
+.boxShadow {
+    margin: auto;
+    height: 5rem;
+    width: 5rem;
+    background-color: gold;
+    box-shadow: 50px 50px 50px grey;
+    margin-bottom: 50px;
+}
 
 
 
