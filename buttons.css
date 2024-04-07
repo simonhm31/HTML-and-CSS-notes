@@ -1,0 +1,29 @@
+#exercise-button{
+    position: fixed;
+    right: 0px;
+    top: 200px;
+    font-size: 15px;
+}
+
+#exercise-button:hover{
+    background-color: green;
+    position: fixed;
+    right: 0px;
+    top: 200px;
+    font-size: 15px;
+}
+
+#notes-button{
+    position: fixed;
+    right: 0px;
+    top: 150px;
+    font-size: 15px;
+}
+
+#notes-button:hover{
+    background-color: green;
+    position: fixed;
+    right: 0px;
+    top: 150px;
+    font-size: 15px;
+}
