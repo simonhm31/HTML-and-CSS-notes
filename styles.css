@@ -2,9 +2,22 @@ body {
     margin: auto;
     text-align: center;
     width: 70%;
-
 }
 
+#exercise-button{
+    position: fixed;
+    right: 0px;
+    top: 250px;
+    font-size: 15px;
+}
+
+#exercise-button:hover{
+    background-color: green;
+    position: fixed;
+    right: 0px;
+    top: 250px;
+    font-size: 15px;
+}
 
 .title, .hidden-elements {
     background-color: beige;
