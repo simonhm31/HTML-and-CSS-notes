@@ -16,4 +16,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_HTML_AND_CSS_NOTES }}'
           channelId: live
-          projectId: html-and-css-notes
+          projectId: html-notes

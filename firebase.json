@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "html-and-css-notes",
+    "public": "html-notes",
     "ignore": [
       "firebase.json",
       "**/.*",
