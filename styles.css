@@ -250,6 +250,13 @@ body {
     list-style: inside;
 }
 
+.subtitle {
+    background-color: beige;
+    border: 1px solid black;
+    list-style: inside;
+    margin-bottom: 1.5rem;
+}
+
 
 
 
