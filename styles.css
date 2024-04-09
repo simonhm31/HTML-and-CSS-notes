@@ -257,8 +257,12 @@ body {
     margin-bottom: 1.5rem;
 }
 
-
-
+#ocean-picture {
+    height: 300px;
+    width: 600px;
+    margin: 1.5rem;
+    box-shadow: 0px 0px 40px rgb(15, 15, 255);
+}
 
 
 
