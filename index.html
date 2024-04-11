@@ -43,7 +43,7 @@
         
         <div class="subtitle" style="background-color: beige;">
             <h2>Box Model:</h2>
-            <p>The Box Model is a model describing the space around an element: </p>
+            <p>Description of the space around an element: </p>
             <img id="box-model-image" src="./box-model.png" alt="Box Model">
         </div>
 
@@ -352,16 +352,21 @@
                     The base tag is a way to set a default href value for all links on the page.
                 </li>
                 <li>
-                    The link tag is most often used for stylesheets and favicons. <code>&ltlink&gt &ltlink/&gt</code>
-                    <br>can have no value inside of it
+                    The link tag is most often used for stylesheets and favicons. <code>&ltlink&gt</code> is a self closing tag
                 </li>
             </ol>
         </div>
 
-        <div class="subtitle" style="background-color: darkkhaki;">
+        <div class="subtitle">
             <h2>Media Queries:</h2>
-            <p>Media Queries are used to set new CSS properties depending on viewport height and viewport width</p>
-            
+            <p>There are three types of media queries:</p>
+            <ul>
+                <li><code>"@media screen"</code></li>
+                <li><code>"@media print"</code></li>
+                <li><code>"@media all"</code></li>
+            </ul>
+            <p>"@media screen" works as an if statement</p>
+            <p>if <code>"@media screen and (min-width: 600px)"</code> is true, the apply these styles <code>{flex-direction: row}</code>
         </div>
 
 
