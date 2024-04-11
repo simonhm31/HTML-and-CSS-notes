@@ -244,6 +244,12 @@ body {
     margin-bottom: 50px;
 }
 
+#box-model-image {
+    height: 350px; 
+    width: 550px; 
+    margin-bottom: 50px;
+}
+
 .selectors{
     background-color: paleturquoise;
     border: 1px solid black;
