@@ -2,7 +2,6 @@ body {
     margin: auto;
     text-align: center;
     width: 70%;
-    border-radius: 5px;
 }
 
 .title, .hidden-elements {
@@ -263,6 +262,7 @@ body {
     list-style: inside;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    border-radius: 4px;
 }
 
 #ocean-picture {
@@ -274,4 +274,12 @@ body {
     border: 1px solid black;
 }
 
+.gradientBox {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(dodgerblue, yellow);
+    border: 1px solid black;
+    margin: auto;
+
+}
 
