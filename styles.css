@@ -13,7 +13,7 @@ body {
 .box-container {
     display: flex;
     justify-content: center;
-    align-items: center; /* Add this line to vertically center */
+    align-items: center; 
 }
 
 .box1 {
