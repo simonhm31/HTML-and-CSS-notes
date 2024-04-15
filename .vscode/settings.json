@@ -4,8 +4,10 @@
     "ltbase",
     "ltlink",
     "lttable",
+    "lttbody",
     "lttd",
     "ltth",
+    "ltthead",
     "lttr",
     "pexels"
   ]
