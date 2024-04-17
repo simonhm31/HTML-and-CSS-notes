@@ -294,6 +294,20 @@ th {
     background: linear-gradient(dodgerblue, yellow);
     border: 1px solid black;
     margin: auto;
-
 }
 
+.gradientBox2 {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to bottom, dodgerblue, yellow);
+    border: 1px solid black;
+    margin: auto;
+}
+
+.gradientBox3 {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to bottom right, dodgerblue, yellow);
+    border: 1px solid black;
+    margin: auto;
+}
