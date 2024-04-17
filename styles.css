@@ -346,7 +346,10 @@ form button {
     background-color: aqua;
     padding: 5px 5px;
     border-radius: 5px;
+}
 
+form button:hover {
+    background-color: lightgreen;
 }
 
 form {
