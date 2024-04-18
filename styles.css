@@ -330,7 +330,7 @@ label {
     display: block;
 }
 
-input {
+.form-input {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 0.5rem 0.7rem;
@@ -342,17 +342,17 @@ input {
     margin-bottom: 1rem;
 }
 
-form button {
+.form-button {
     background-color: aqua;
     padding: 5px 5px;
     border-radius: 5px;
 }
 
-form button:hover {
+.form-button:hover {
     background-color: lightgreen;
 }
 
-form {
+.styled-by-hand-form {
     background-color: white;
     width: 50%;
     margin: auto;

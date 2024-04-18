@@ -433,22 +433,21 @@
             <ul>
                 <li><code>&ltlabel for="" &gt&ltlabel/&gt</code></li>
                 <li><code>&ltinput type=""/&gt</code></li>
-                <!-- <li>Every form should have <code>action=""</code> for submitting the form</li> -->
             </ul>
             <p>Using</p>
 
             <div class="subsubtitle">
-                <form action="">
+                <form class="styled-by-hand-form" action="">
                     <div class="form-group">
                         <label for="Name">Name: </label>
-                        <input id="Name" type="text">
+                        <input class="form-input" id="Name" type="text">
                     </div>
                     <div class="form-group">
                         <label for="Email">Email:</label>
-                        <input id="Email" type="email">
+                        <input class="form-input" id="Email" type="email">
                     </div>
-                        <button type="submit">Register</button>
-                        <button type="reset">Clear</button>
+                        <button class="form-button" type="submit">Register</button>
+                        <button class="form-button" type="reset">Clear</button>
                 </form>
             </div>
             
@@ -464,6 +463,19 @@
                     <li>Materialize</li>
                     <li>Milligram</li>
                 </ul>
+                <p>Bootstrap form:</p>
+                <form action="">
+                    <div>
+                        <label for="Name">Name: </label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="Email">Email:</label>
+                        <input type="email">
+                    </div>
+                        <button type="submit">Register</button>
+                        <button type="reset">Clear</button>
+                </form>
             </div>
         </div>
 
