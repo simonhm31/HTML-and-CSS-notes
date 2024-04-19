@@ -366,3 +366,74 @@ label {
 #name-input {
     margin-bottom: 1.5rem;
 }
+
+.rotateBox {
+    height: 100px;
+    width: 100px;
+    background-color: lightseagreen;
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.rotateBox:hover {
+    transform: scale(1.5);
+    transform: rotate(25deg);
+    cursor: pointer;
+}
+
+.scaleBox {
+    height: 100px;
+    width: 100px;
+    background-color: lightseagreen;
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.scaleBox:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.skewBox {
+    height: 100px;
+    width: 100px;
+    background-color: lightseagreen;
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.skewBox:hover {
+    transform: skew(50deg);
+    cursor: pointer;
+}
+
+.translateBox {
+    height: 100px;
+    width: 100px;
+    background-color: lightseagreen;
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.translateBox:hover {
+    transform: translate(50px);
+    cursor: pointer;
+}
+
+.combinedBox {
+    height: 100px;
+    width: 100px;
+    background-color: lightseagreen;
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.combinedBox:hover {
+    transform: rotate(45deg) skew(20deg) scale(2) translateX(40px) translateY(100px); 
+    cursor: pointer;
+}
