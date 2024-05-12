@@ -438,3 +438,10 @@ label {
     transform: rotate(45deg) skew(20deg) scale(2) translateX(40px) translateY(100px); 
     cursor: pointer;
 }
+
+.text {
+    background-color: white;
+    border: 2px solid black;
+    width: 75%;
+    margin-bottom: 20px;
+}
