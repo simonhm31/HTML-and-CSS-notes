@@ -1,565 +1,715 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML notes</title>
-    <link rel="icon" href="./favicon.png">
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./buttons.css">
-</head>
-<body>
-        <h1 class="title">HTML and CSS notes</h1>
+    <link rel="icon" href="./favicon.png" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./buttons.css" />
+  </head>
+  <body>
+    <h1 class="title">HTML and CSS notes</h1>
 
-        <a href="./index.html">
-            <button type="button" class="btn btn-primary btn-lg" id="notes-button">Notes</button>
-        </a>
-        <a href="./exercises.html">
-            <button type="button" class="btn btn-primary btn-lg" id="exercise-button">Course Exercises</button>
-        </a>
+    <a href="./index.html">
+      <button type="button" class="btn btn-primary btn-lg" id="notes-button">
+        Notes
+      </button>
+    </a>
+    <a href="./exercises.html">
+      <button type="button" class="btn btn-primary btn-lg" id="exercise-button">
+        Course Exercises
+      </button>
+    </a>
 
-        <h2>Hiding Elements:</h2>
-        <p>Elements can be hidden in one of two ways-</p>
-        <code>display:none</code><p>and</p><code>visibility:hidden</code>
-        <p>Here we have two elements-</p>
-        <div class="hidden-elements">
-            <p>First Element</p>
-            <p>Second Element</p>
-        </div>
-        <br>
-        <p>Calling <code>display:none</code> on the second element leaves</p>
-        <div class="hidden-elements">
-            <p>First Element</p>
-            <p style="display:none">Second Element</p>
-        </div>
-        <p>Calling <code>visibility:hidden</code> on the second element leaves</p>
-        <div class="hidden-elements">
-            <p>First Element</p>
-            <p style="visibility:hidden">Second Element</p>
-        </div>
+    <h2>Hiding Elements:</h2>
+    <p>Elements can be hidden in one of two ways-</p>
+    <code>display:none</code>
+    <p>and</p>
+    <code>visibility:hidden</code>
+    <p>Here we have two elements-</p>
+    <div class="hidden-elements">
+      <p>First Element</p>
+      <p>Second Element</p>
+    </div>
+    <br />
+    <p>Calling <code>display:none</code> on the second element leaves</p>
+    <div class="hidden-elements">
+      <p>First Element</p>
+      <p style="display: none">Second Element</p>
+    </div>
+    <p>Calling <code>visibility:hidden</code> on the second element leaves</p>
+    <div class="hidden-elements">
+      <p>First Element</p>
+      <p style="visibility: hidden">Second Element</p>
+    </div>
 
-        
-        <div class="subtitle" style="background-color: beige;">
-            <h2>Box Model:</h2>
-            <p>Description of the space around an element: </p>
-            <img id="box-model-image" src="./box-model.png" alt="Box Model">
-        </div>
+    <div class="subtitle" style="background-color: beige">
+      <h2>Box Model:</h2>
+      <p>Description of the space around an element:</p>
+      <img id="box-model-image" src="./box-model.png" alt="Box Model" />
+    </div>
 
-        <h2>Measurement Units:</h2>
-        <p>Absolute Measurement Units-</p>
-        <p style="font-weight: bold;">Pixels</p>
-        <br>
-        <p>Relative to Viewport Size-</p>
-        <p style="font-weight: bold;">vh, vw, %</p>
-        <br>
-        <p>Relative to Font Size-</p>
-        <p style="font-weight: bold;">em, rem</p>
-        <br>
-        <p>VH is viewport height VW is viewport width.  These work differently than % because % is relative to the parent element whereas vh and vw are relative to the viewport</p>
-        <p>1 em is equal to the current font size, whatever that may be. 1 rem is equal to the root font size, which is always 16 pixels.</p>
+    <h2>Measurement Units:</h2>
+    <p>Absolute Measurement Units-</p>
+    <p style="font-weight: bold">Pixels</p>
+    <br />
+    <p>Relative to Viewport Size-</p>
+    <p style="font-weight: bold">vh, vw, %</p>
+    <br />
+    <p>Relative to Font Size-</p>
+    <p style="font-weight: bold">em, rem</p>
+    <br />
+    <p>
+      VH is viewport height VW is viewport width. These work differently than %
+      because % is relative to the parent element whereas vh and vw are relative
+      to the viewport
+    </p>
+    <p>
+      1 em is equal to the current font size, whatever that may be. 1 rem is
+      equal to the root font size, which is always 16 pixels.
+    </p>
 
-        <p><code>width/height: fit-content</code> is also an option</p>
-        <p>The <code>fit-content</code> means that box will use the available space. <code>fit-content</code> uses less space than <code>max-content</code></p>
+    <p><code>width/height: fit-content</code> is also an option</p>
+    <p>
+      The <code>fit-content</code> means that box will use the available space.
+      <code>fit-content</code> uses less space than <code>max-content</code>
+    </p>
 
-        <br>
-        <h2>Sizing Elements:</h2>
-        <p>The <code>box-sizing</code> CSS keyword is used to specify if the height and width of a box includes the padding and border.</p>
-        <p><code>box-sizing</code> has two options, <code>content-box</code> and <code>border-box</code></p>
-        <p>For example this box has the trait <code>box-sizing: content-box</code> (which is the default setting)</p>
-        <div class="box-container">
-            <div class="box1"></div>
-        </div>
-            <p>And this box has the trait <code>box-sizing: border-box</code></p>
-        <div class="box-container">
-            <div class="box2"></div>
-        </div>
-       <p>As you can see, the boxes are different sizes because the <code>box-sizing</code> CSS
-        keyword impacts the width and height</code></p>
+    <br />
+    <h2>Sizing Elements:</h2>
+    <p>
+      The <code>box-sizing</code> CSS keyword is used to specify if the height
+      and width of a box includes the padding and border.
+    </p>
+    <p>
+      <code>box-sizing</code> has two options, <code>content-box</code> and
+      <code>border-box</code>
+    </p>
+    <p>
+      For example this box has the trait
+      <code>box-sizing: content-box</code> (which is the default setting)
+    </p>
+    <div class="box-container">
+      <div class="box1"></div>
+    </div>
+    <p>And this box has the trait <code>box-sizing: border-box</code></p>
+    <div class="box-container">
+      <div class="box2"></div>
+    </div>
+    <p>
+      As you can see, the boxes are different sizes because the
+      <code>box-sizing</code> CSS keyword impacts the width and height
+    </p>
+    <h2>Positioning:</h2>
+    <p>
+      The default value for the <code>position</code> CSS keyword is "static".
+    </p>
+    <p>These boxes all have <code>position: static</code></p>
+    <div class="boxes">
+      <div class="box box-1"></div>
+      <div class="box box-2"></div>
+      <div class="box box-3"></div>
+    </div>
+    <p>These boxes all have <code>position: relative</code></p>
+    <p>
+      With <code>position: relative</code> we can position elements relative to
+      their original (or static) position
+    </p>
+    <p>
+      This is done with the <code>left, right, top, and bottom</code> keywords
+    </p>
+    <div class="boxes">
+      <div class="box box2-1"></div>
+      <div class="box box2-2"></div>
+      <div class="box box2-3"></div>
+    </div>
+    <p>These boxes all have <code>position: absolute</code></p>
+    <p>
+      This makes child elements invisible to their parent container. <br />
+      This positions elements relative to their container ONLY IF the parent
+      container has the <code>position: relative</code> property
+    </p>
+    <p>
+      If the container has <code>position:static</code> the child elements won't
+      appear at all
+    </p>
+    <p>
+      This is done with the <code>left, right, top, and bottom</code> keywords
+    </p>
+    <div class="boxes">
+      <div class="box box3-1"></div>
+      <div class="box box3-2"></div>
+      <div class="box box3-3"></div>
+    </div>
+    <p>These boxes all have <code>position: fixed</code></p>
+    <p>This positions elements relative to the viewport window</p>
+    <p>
+      For example, the gold box is way up in the top left corner of this page,
+      and the red and blue boxes are in the top right.
+    </p>
+    <p>
+      If you want something to stay on the viewport screen no matter what, this
+      is how to do it.
+    </p>
+    <div class="boxes">
+      <div class="box box4-1"></div>
+      <div class="box box4-2"></div>
+      <div class="box box4-3"></div>
+    </div>
 
-        <h2>Positioning:</h2>
-        <p>The default value for the <code>position</code> CSS keyword is "static".</p>
-        <p>These boxes all have <code>position: static</code></p>
-        <div class="boxes">
-            <div class="box box-1"></div>
-            <div class="box box-2"></div>
-            <div class="box box-3"></div>
-        </div>
-        <p>These boxes all have <code>position: relative</code></p>
-        <p>With <code>position: relative</code> we can position elements relative to their original (or static) position</p>
-        <p>This is done with the <code>left, right, top, and bottom</code> keywords</p>
-        <div class="boxes">
-            <div class="box box2-1"></div>
-            <div class="box box2-2"></div>
-            <div class="box box2-3"></div>
-        </div>
-        <p>These boxes all have <code>position: absolute</code></p>
-        <p>This makes child elements invisible to their parent container. <br>
-        This positions elements relative to their container ONLY IF the parent container has the <code>position: relative</code> property</code></p>
-        <p>If the container has <code>position:static</code> the child elements won't appear at all</p>
-        <p>This is done with the <code>left, right, top, and bottom</code> keywords</p>
-        <div class="boxes">
-            <div class="box box3-1"></div>
-            <div class="box box3-2"></div>
-            <div class="box box3-3"></div>
-        </div>
-        <p>These boxes all have <code>position: fixed</code></p>
-        <p>This positions elements relative to the viewport window</p>
-        <p>For example, the gold box is way up in the top left corner of this page, and the red and blue boxes are in the top right.</p>
-        <p>If you want something to stay on the viewport screen no matter what, this is how to do it.</p>
-        <div class="boxes">
-            <div class="box box4-1"></div>
-            <div class="box box4-2"></div>
-            <div class="box box4-3"></div>
-        </div>
+    <h2>Floating Elements:</h2>
+    <p><code>float:none</code> is the default</p>
 
-        <h2>Floating Elements:</h2>
-        <p><code>float:none</code> is the default </p>
+    <h2>Flexbox:</h2>
+    <p>To use flexbox, use <code>display:flex</code> in the parent container</p>
+    <p>
+      The direction can be either <code>flex-direction:row</code> or
+      <code>flex-direction:column</code>
+    </p>
+    <p>The default is <code>flex-direction:row</code></p>
+    <div class="flexContainer">
+      <div class="flexBox">1</div>
+      <div class="flexBox">2</div>
+      <div class="flexBox">3</div>
+      <div class="flexBox">4</div>
+      <div class="flexBox">5</div>
+    </div>
+    <p>We can also use <code>flex-direction: row-reverse</code></p>
+    <div class="flexContainer2">
+      <div class="flexBox">1</div>
+      <div class="flexBox">2</div>
+      <div class="flexBox">3</div>
+      <div class="flexBox">4</div>
+      <div class="flexBox">5</div>
+    </div>
+    <p>
+      <code>justify-content</code> is used to position elements along the x axis
+    </p>
+    <p>
+      <code>align-items</code> is used to position elements along the y axis
+    </p>
+    <p>For example, <code>justify-content:flex-end</code> creates</p>
+    <div class="flexContainer3">
+      <div class="flexBox">1</div>
+      <div class="flexBox">2</div>
+      <div class="flexBox">3</div>
+      <div class="flexBox">4</div>
+      <div class="flexBox">5</div>
+    </div>
+    <p>Whereas <code>justify-content:center</code> creates</p>
+    <div class="flexContainer4">
+      <div class="flexBox">1</div>
+      <div class="flexBox">2</div>
+      <div class="flexBox">3</div>
+      <div class="flexBox">4</div>
+      <div class="flexBox">5</div>
+    </div>
 
-        <h2>Flexbox:</h2>
-        <p>To use flexbox, use <code>display:flex</code> in the parent container</p>
-        <p>The direction can be either <code>flex-direction:row</code> or <code>flex-direction:column</code></p>
-        <p>The default is <code>flex-direction:row</code></p>
-        <div class="flexContainer">
-            <div class="flexBox">1</div>
-            <div class="flexBox">2</div>
-            <div class="flexBox">3</div>
-            <div class="flexBox">4</div>
-            <div class="flexBox">5</div>
-        </div>
-        <p>We can also use <code>flex-direction: row-reverse</code></p>
-        <div class="flexContainer2">
-            <div class="flexBox">1</div>
-            <div class="flexBox">2</div>
-            <div class="flexBox">3</div>
-            <div class="flexBox">4</div>
-            <div class="flexBox">5</div>
-        </div>
-        <p><code>justify-content</code> is used to position elements along the x axis</p>
-        <p><code>align-items</code> is used to position elements along the y axis</p>
-        <p>For example, <code>justify-content:flex-end</code> creates</p>
-        <div class="flexContainer3">
-            <div class="flexBox">1</div>
-            <div class="flexBox">2</div>
-            <div class="flexBox">3</div>
-            <div class="flexBox">4</div>
-            <div class="flexBox">5</div>
-        </div>
-        <p>Whereas <code>justify-content:center</code> creates</p>
-        <div class="flexContainer4">
-            <div class="flexBox">1</div>
-            <div class="flexBox">2</div>
-            <div class="flexBox">3</div>
-            <div class="flexBox">4</div>
-            <div class="flexBox">5</div>
-        </div>
+    <p>
+      We can also use the <code>space-evenly, space-between, space-around</code>
+    </p>
+    <code>justify-content: space-evenly</code>
+    <div class="flexContainer5">
+      <div class="flexBox">1</div>
+      <div class="flexBox">2</div>
+      <div class="flexBox">3</div>
+      <div class="flexBox">4</div>
+      <div class="flexBox">5</div>
+    </div>
+    <code>justify-content: space-between</code>
+    <div class="flexContainer6">
+      <div class="flexBox">1</div>
+      <div class="flexBox">2</div>
+      <div class="flexBox">3</div>
+      <div class="flexBox">4</div>
+      <div class="flexBox">5</div>
+    </div>
+    <code>justify-content: space-around</code>
+    <div class="flexContainer7">
+      <div class="flexBox">1</div>
+      <div class="flexBox">2</div>
+      <div class="flexBox">3</div>
+      <div class="flexBox">4</div>
+      <div class="flexBox">5</div>
+    </div>
+    <p>
+      <code>justify-content</code> and <code>align-items</code> are COMPLETELY
+      different that <code>flex-direction:row</code> or
+      <code>flex-direction:column</code>
+    </p>
+    <p>
+      All <code>flex-direction</code> does is make the elements go horizontal or
+      vertical
+    </p>
+    <p>
+      This is different than <code>justify-content</code> and
+      <code>align-items</code> where there are MANY options for how exactly to
+      position the elements
+    </p>
+    <p>
+      For example, to position the boxes in the center of a container we can use
+      <a style="font-style: italic">BOTH </a><code>justify-content</code> and
+      <code>align-items</code>
+    </p>
+    <div class="flexContainer8">
+      <div class="flexBox">1</div>
+      <div class="flexBox">2</div>
+      <div class="flexBox">3</div>
+      <div class="flexBox">4</div>
+      <div class="flexBox">5</div>
+    </div>
+    <p>
+      <code>align-content</code> is only used when there are multiple lines of
+      elements in a container
+    </p>
+    <p>
+      To add multiple lines of elements, you might think that we can just add a
+      bunch of boxes like this. However, this doesn't make multiple lines.<br />
+      It just makes the elements smaller
+    </p>
+    <div class="flexContainer9">
+      <div class="flexBox">1</div>
+      <div class="flexBox">2</div>
+      <div class="flexBox">3</div>
+      <div class="flexBox">4</div>
+      <div class="flexBox">5</div>
+      <div class="flexBox">6</div>
+      <div class="flexBox">7</div>
+      <div class="flexBox">8</div>
+      <div class="flexBox">9</div>
+      <div class="flexBox">10</div>
+      <div class="flexBox">11</div>
+      <div class="flexBox">12</div>
+      <div class="flexBox">13</div>
+      <div class="flexBox">14</div>
+      <div class="flexBox">15</div>
+      <div class="flexBox">16</div>
+      <div class="flexBox">17</div>
+      <div class="flexBox">18</div>
+    </div>
+    <p>To create multiple lines we have to use <code>flex-wrap</code></p>
+    <p>Using <code>flex-wrap:wrap</code> we get</p>
+    <div class="flexContainer10">
+      <div class="flexBox">1</div>
+      <div class="flexBox">2</div>
+      <div class="flexBox">3</div>
+      <div class="flexBox">4</div>
+      <div class="flexBox">5</div>
+      <div class="flexBox">6</div>
+      <div class="flexBox">7</div>
+      <div class="flexBox">8</div>
+      <div class="flexBox">9</div>
+      <div class="flexBox">10</div>
+      <div class="flexBox">11</div>
+      <div class="flexBox">12</div>
+      <div class="flexBox">13</div>
+      <div class="flexBox">14</div>
+      <div class="flexBox">15</div>
+      <div class="flexBox">16</div>
+      <div class="flexBox">17</div>
+      <div class="flexBox">18</div>
+    </div>
+    <p>
+      Now, because there are multiple lines we can use
+      <code>align-content</code>
+    </p>
+    <p>Using <code>align-content:center</code> we get</p>
+    <div class="flexContainer11">
+      <div class="flexBox">1</div>
+      <div class="flexBox">2</div>
+      <div class="flexBox">3</div>
+      <div class="flexBox">4</div>
+      <div class="flexBox">5</div>
+      <div class="flexBox">6</div>
+      <div class="flexBox">7</div>
+      <div class="flexBox">8</div>
+      <div class="flexBox">9</div>
+      <div class="flexBox">10</div>
+      <div class="flexBox">11</div>
+      <div class="flexBox">12</div>
+      <div class="flexBox">13</div>
+      <div class="flexBox">14</div>
+      <div class="flexBox">15</div>
+      <div class="flexBox">16</div>
+      <div class="flexBox">17</div>
+      <div class="flexBox">18</div>
+    </div>
+    <p>Another flex keyword is <code>align-self</code></p>
+    <p>
+      <code>align-self</code> is used to align an item within a flex container
+    </p>
+    <div class="flexContainer12">
+      <div class="flexBox flexBox1">1</div>
+      <div class="flexBox flexBox2">2</div>
+      <div class="flexBox">3</div>
+      <div class="flexBox">4</div>
+      <div class="flexBox">5</div>
+      <div class="flexBox">6</div>
+      <div class="flexBox">7</div>
+      <div class="flexBox">8</div>
+      <div class="flexBox">9</div>
+      <div class="flexBox">10</div>
+      <div class="flexBox">11</div>
+      <div class="flexBox">12</div>
+      <div class="flexBox">13</div>
+      <div class="flexBox">14</div>
+      <div class="flexBox">15</div>
+      <div class="flexBox">16</div>
+      <div class="flexBox">17</div>
+      <div class="flexBox">18</div>
+    </div>
 
-        <p>We can also use the <code>space-evenly, space-between, space-around</code> </p>
-        <code>justify-content: space-evenly</code>
-        <div class="flexContainer5">
-            <div class="flexBox">1</div>
-            <div class="flexBox">2</div>
-            <div class="flexBox">3</div>
-            <div class="flexBox">4</div>
-            <div class="flexBox">5</div>
-        </div>
-        <code>justify-content: space-between</code>
-        <div class="flexContainer6">
-            <div class="flexBox">1</div>
-            <div class="flexBox">2</div>
-            <div class="flexBox">3</div>
-            <div class="flexBox">4</div>
-            <div class="flexBox">5</div>
-        </div>
-        <code>justify-content: space-around</code>
-        <div class="flexContainer7">
-            <div class="flexBox">1</div>
-            <div class="flexBox">2</div>
-            <div class="flexBox">3</div>
-            <div class="flexBox">4</div>
-            <div class="flexBox">5</div>
-        </div>
-        <p><code>justify-content</code> and <code>align-items</code> are COMPLETELY different that <code>flex-direction:row</code> or <code>flex-direction:column</code></p>
-        <p>All <code>flex-direction</code> does is make the elements go horizontal or vertical</p>
-        <p>This is different than <code>justify-content</code> and <code>align-items</code> where there are MANY options for how exactly to position the elements </p>
-        <p>For example, to position the boxes in the center of a container we can use <a style="font-style: italic;">BOTH </a><code>justify-content</code> and <code>align-items</code> </p>
-        <div class="flexContainer8">
-            <div class="flexBox">1</div>
-            <div class="flexBox">2</div>
-            <div class="flexBox">3</div>
-            <div class="flexBox">4</div>
-            <div class="flexBox">5</div>
-        </div>
-        <p><code>align-content</code> is only used when there are multiple lines of elements in a container</p>
-        <p>To add multiple lines of elements, you might think that we can just add a bunch of boxes like this. However, this doesn't make multiple lines.<br>
-        It just makes the elements smaller</p>
-        <div class="flexContainer9">
-            <div class="flexBox">1</div>
-            <div class="flexBox">2</div>
-            <div class="flexBox">3</div>
-            <div class="flexBox">4</div>
-            <div class="flexBox">5</div>
-            <div class="flexBox">6</div>
-            <div class="flexBox">7</div>
-            <div class="flexBox">8</div>
-            <div class="flexBox">9</div>
-            <div class="flexBox">10</div>
-            <div class="flexBox">11</div>
-            <div class="flexBox">12</div>
-            <div class="flexBox">13</div>
-            <div class="flexBox">14</div>
-            <div class="flexBox">15</div>
-            <div class="flexBox">16</div>
-            <div class="flexBox">17</div>
-            <div class="flexBox">18</div>
-        </div>
-        <p>To create multiple lines we have to use <code>flex-wrap</code></p>
-        <p>Using <code>flex-wrap:wrap</code> we get</p>
-        <div class="flexContainer10">
-            <div class="flexBox">1</div>
-            <div class="flexBox">2</div>
-            <div class="flexBox">3</div>
-            <div class="flexBox">4</div>
-            <div class="flexBox">5</div>
-            <div class="flexBox">6</div>
-            <div class="flexBox">7</div>
-            <div class="flexBox">8</div>
-            <div class="flexBox">9</div>
-            <div class="flexBox">10</div>
-            <div class="flexBox">11</div>
-            <div class="flexBox">12</div>
-            <div class="flexBox">13</div>
-            <div class="flexBox">14</div>
-            <div class="flexBox">15</div>
-            <div class="flexBox">16</div>
-            <div class="flexBox">17</div>
-            <div class="flexBox">18</div>
-        </div>
-        <p>Now, because there are multiple lines we can use <code>align-content</code></p>
-        <p>Using <code>align-content:center</code> we get </p>
-        <div class="flexContainer11">
-            <div class="flexBox">1</div>
-            <div class="flexBox">2</div>
-            <div class="flexBox">3</div>
-            <div class="flexBox">4</div>
-            <div class="flexBox">5</div>
-            <div class="flexBox">6</div>
-            <div class="flexBox">7</div>
-            <div class="flexBox">8</div>
-            <div class="flexBox">9</div>
-            <div class="flexBox">10</div>
-            <div class="flexBox">11</div>
-            <div class="flexBox">12</div>
-            <div class="flexBox">13</div>
-            <div class="flexBox">14</div>
-            <div class="flexBox">15</div>
-            <div class="flexBox">16</div>
-            <div class="flexBox">17</div>
-            <div class="flexBox">18</div>
-        </div>
-        <p>Another flex keyword is <code>align-self</code></p>
-        <p><code>align-self</code> is used to align an item within a flex container </p>
-        <div class="flexContainer12">
-            <div class="flexBox flexBox1">1</div>
-            <div class="flexBox flexBox2">2</div>
-            <div class="flexBox">3</div>
-            <div class="flexBox">4</div>
-            <div class="flexBox">5</div>
-            <div class="flexBox">6</div>
-            <div class="flexBox">7</div>
-            <div class="flexBox">8</div>
-            <div class="flexBox">9</div>
-            <div class="flexBox">10</div>
-            <div class="flexBox">11</div>
-            <div class="flexBox">12</div>
-            <div class="flexBox">13</div>
-            <div class="flexBox">14</div>
-            <div class="flexBox">15</div>
-            <div class="flexBox">16</div>
-            <div class="flexBox">17</div>
-            <div class="flexBox">18</div>
-        </div>
+    <h2>Grid:</h2>
 
-        <h2>Grid:</h2>
+    <div class="selectors">
+      <h2>CSS Selectors:</h2>
+      <p>Different ways to select elements-</p>
+      <ol>
+        <li>Type</li>
+        <code> h1 {color: blue;} </code>
+        <li>ID</li>
+        <code> #h1 {color: blue;} </code>
+        <li>class</li>
+        <code> .h1 {color: blue;} </code>
+      </ol>
+    </div>
 
-        <div class="selectors">
-            <h2>CSS Selectors:</h2>
-            <p>Different ways to select elements-</p>
-            <ol>
-                <li>Type</li>
-                <code>
-                    h1 {color: blue;}
-                </code>
-                <li>ID</li>
-                <code>
-                    #h1 {color: blue;}
-                </code>
-                <li>class</li>
-                <code>
-                    .h1 {color: blue;}
-                </code>
-            </ol>
-        </div>
+    <h2>Videos:</h2>
+    <p>
+      Embedding videos is mostly the same as embedding images. This is from
+      pexels.com
+    </p>
+    <video style="height: 400px" controls src="videos/ocean.mp4"></video>
 
-        
+    <h2>Embedding code without being parsed:</h2>
+    <p>
+      Using '&'lt; (less than) and '&'gt; (greater than) without the quotation
+      marks around the '&' will create
+      <code>&lt tags &gt &lt /tags &gt &lt h1 &gt &lt /h1 &gt</code>you can see
+      without it being parsed
+    </p>
 
-        <h2>Videos:</h2>
-        <p>Embedding videos is mostly the same as embedding images. This is from pexels.com</p>
-        <video style="height: 400px" controls src="videos/ocean.mp4"></video>
+    <h2>Opening link in new tab:</h2>
+    <p>
+      <code>&lta href="some.link" target="_blank"&gtTEXT&lt/a&gt</code> will
+      open the href link in a new tab
+    </p>
+    <a href="https://www.google.com/" target="_blank">TEXT</a>
 
-        <h2>Embedding code without being parsed:</h2>
-        <p>Using '&'lt; (less than) and '&'gt; (greater than) without the quotation marks 
-            around the '&' will create <code>&lt tags &gt &lt /tags &gt &lt h1 &gt &lt /h1 &gt</code>you can see without it being parsed
+    <h2>Box Shadow:</h2>
+    <p>
+      To use <code>box-shadow</code>, imagine you start with a box directly
+      under the visible box. Your job is to position <br />
+      it using
+      <code
+        >box-shadow: [right transform] [down transform] [BLUR]
+        [shadow-size-increase] [color]</code
+      >.
+    </p>
+    <div class="boxShadow"></div>
+    <p>
+      One trick to using <code>box-shadow</code> is to have
+      <code>box-shadow: 0px 0px 10px grey</code>
+    </p>
+    <p>This will create a cool effect-</p>
+    <div class="boxShadow2"></div>
+
+    <div class="subtitle">
+      <h2>Linking HTML files together:</h2>
+      <p>
+        HTML files can be linked together with the <code>"href"</code> attribute
+      </p>
+      <p>
+        <strong><u>ONLY</u></strong> these tags can support the
+        <code>href</code> attribute:
+      </p>
+      <ol>
+        <li><code>&lta&gt &lta/&gt</code></li>
+        <li><code>&ltarea&gt &ltarea/&gt</code></li>
+        <li><code>&ltbase&gt &ltbase/&gt</code></li>
+        <li><code>&ltlink&gt &ltlink/&gt</code></li>
+      </ol>
+      <ol>
+        <li>
+          <p>
+            The <code>&lta&gt &lta/&gt</code> tags are the most common way to
+            use <code>href</code> <br />
+            <code>&lta&gt &lta/&gt</code> tags can have other tags (for example
+            <code>&ltp&gt &ltp/&gt</code>) inside of them
+          </p>
+          <p></p>
+          <p>For example, <a href="./exercises.html">./exercises.html</a></p>
+        </li>
+        <li>
+          <p>
+            The <code>&ltarea&gt&ltarea/&gt</code> tags are used to add a
+            clickable link to an <strong>area</strong> of the screen. For
+            example, part of this image will bring you to the
+            <code>exercises.html</code> page
+            <br />
+
+            <img id="ocean-picture" style: height="300px" width="600px"
+            src="./ocean.png" usemap="#ocean-picture" alt="picture of ocean">
+
+            <map name="ocean-picture">
+              <area
+                shape="rect"
+                coords="34,44,270,350"
+                alt="Computer"
+                href="./exercises.html"
+              />
+            </map>
+          </p>
+        </li>
+
+        <li>
+          The base tag is a way to set a default href value for all links on the
+          page.
+        </li>
+        <li>
+          The link tag is most often used for stylesheets and favicons.
+          <code>&ltlink&gt</code> is a self closing tag
+        </li>
+      </ol>
+    </div>
+
+    <div class="subtitle">
+      <h2>Media Queries:</h2>
+      <p>There are three types of media queries:</p>
+      <ul>
+        <li><code>"@media screen"</code></li>
+        <li><code>"@media print"</code></li>
+        <li><code>"@media all"</code></li>
+      </ul>
+      <p>"@media screen" works as an if statement</p>
+      <p>
+        if <code>"@ media screen and (min-width: 600px)" </code> is true, apply
+        <code>{flex-direction: row}</code>:
+      </p>
+      <p>"If the viewport width > 600px, the apply flex-direction: row"</p>
+      <p>
+        <code>"@ media screen and (min-width: 600px)"</code> and
+        <code>"@ media screen and (max-width: 800px)"</code>, apply
+        <code>"background-color: green"</code>:
+      </p>
+      <p>"If 800px > viewport width > 600px, the apply flex-direction: row"</p>
+    </div>
+
+    <div class="subtitle" style="background-color: lightyellow">
+      <h2>Gradients:</h2>
+      <h3>Three types of gradients:</h3>
+      <ul>
+        <li>Linear Gradients</li>
+        <li>Radial Gradients</li>
+        <li>Conic Gradients</li>
+      </ul>
+      <p>
+        Linear gradients are created through
+        <code>background: linear-gradient([color1], [color2])</code> on an
+        element
+      </p>
+      <div class="gradientBox"></div>
+      <p>
+        This box has
+        <code>"background: linear-gradient(dodgerblue, yellow);"</code>
+      </p>
+      <p>
+        To switch the color scheme order we can do
+        <code
+          >"background: linear-gradient(to bottom, dodgerblue, yellow);"</code
+        >
+      </p>
+      <div class="gradientBox2"></div>
+      <p>
+        Similarly, to make the color scheme go diagonal we can do
+        <code
+          >"background: linear-gradient(to bottom right, dodgerblue,
+          yellow);"</code
+        >
+      </p>
+      <div class="gradientBox3"></div>
+
+      <h3>Radial Gradients:</h3>
+      <h3>Conic Gradients:</h3>
+    </div>
+
+    <div class="subtitle">
+      <h2>Tables:</h2>
+      <p>
+        The <code>&lttable&gt&lt/table&gt</code> tags are used for displaying
+        tabular data
+      </p>
+      <p>Tags used inside of <code>&lttable&gt&lt/table&gt</code> are:</p>
+      <ul>
+        <li><code>&lttr&gt&lttr&gt:</code> "table row"</li>
+        <li><code>&lttd&gt&lttd&gt:</code> "table data cell"</li>
+        <li><code>&ltthead&gt&ltthead&gt:</code> "table header"</li>
+        <li><code>&lttbody&gt&lttbody&gt:</code> "table body"</li>
+        <li><code>&ltth&gt&ltth&gt:</code> "table header element"</li>
+      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Contact Type</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Email:</td>
+            <td>emailaddress@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Phone:</td>
+            <td>202-456-1111</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="subtitle">
+      <h2>Forms:</h2>
+      <p>Tags associated with <code>&ltform action=""&gt&lt/form&gt</code>:</p>
+      <ul>
+        <li><code>&ltlabel for="" &gt&ltlabel/&gt</code></li>
+        <li><code>&ltinput type=""/&gt</code></li>
+      </ul>
+      <p>Using</p>
+
+      <div class="subsubtitle">
+        <form class="styled-by-hand-form" action="">
+          <div class="form-group">
+            <label for="Name">Name: </label>
+            <input class="form-input" id="Name" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="Email">Email:</label>
+            <input class="form-input" id="Email" type="email" />
+          </div>
+          <button class="form-button" type="submit">Register</button>
+          <button class="form-button" type="reset">Clear</button>
+        </form>
+      </div>
+
+      <div class="subsubtitle">
+        <h3>CSS Frameworks:</h3>
+        <p>
+          If there is any place that you would use a CSS Framework, it is when
+          you need a form
         </p>
+        <p>Some CSS frameworks are:</p>
+        <ul>
+          <li>Bootstrap</li>
+          <li>Foundation</li>
+          <li>Semantic UI</li>
+          <li>UI Kit</li>
+          <li>Materialize</li>
+          <li>Milligram</li>
+        </ul>
+        <p>Bootstrap form:</p>
+        <form action="">
+          <div>
+            <label for="Name">Name: </label>
+            <input type="text" />
+          </div>
+          <div>
+            <label for="Email">Email:</label>
+            <input type="email" />
+          </div>
+          <button type="submit">Register</button>
+          <button type="reset">Clear</button>
 
-        <h2>Opening link in new tab:</h2>
-        <p><code>&lta href="some.link" target="_blank"&gtTEXT&lt/a&gt</code> will open the href link in a new tab</p>
-        <a href="https://www.google.com/" target="_blank">TEXT</a>
+          <label
+            for="files"
+            style="
+              background-color: white;
+              cursor: pointer;
+              border: 1px solid black;
+              width: 200px;
+              margin: auto;
+            "
+            class="button"
+            ><i class="fa fa-camera"></i
+          ></label>
+          <input
+            id="files"
+            style="visibility: hidden; background-color: white"
+            type="file"
+            accept="image/*"
+            capture="camera"
+          />
+        </form>
+      </div>
 
-        <h2>Box Shadow:</h2>
-        <p>To use <code>box-shadow</code>, imagine you start with a box directly under the visible box.
-            Your job is to position <br> it using <code>box-shadow: [right transform] [down transform] [BLUR] [shadow-size-increase] [color]</code>. </p>
-        <div class="boxShadow"></div>
-        <p>One trick to using <code>box-shadow</code> is to have <code>box-shadow: 0px 0px 10px grey</code></p>
-        <p>This will create a cool effect-</p>
-        <div class="boxShadow2"></div>
+      <div class="subsubtitle">
+        <h2>Submitting the Form</h2>
 
-        <div class="subtitle">
-            <h2>Linking HTML files together:</h2>
-            <p>HTML files can be linked together with the <code>"href"</code> attribute</p>
-            <p><strong><u>ONLY</u></strong> these tags can support the <code>href</code> attribute:</p>
-            <ol>
-                <li><code>&lta&gt &lta/&gt</code></li>
-                <li><code>&ltarea&gt &ltarea/&gt</code></li>
-                <li><code>&ltbase&gt &ltbase/&gt</code></li>
-                <li><code>&ltlink&gt &ltlink/&gt</code></li>
-            </ol>
-            <ol>
-                <li>
-                    <p>The <code>&lta&gt &lta/&gt</code> tags are the most common way to use <code>href</code>
-                    <br> <code>&lta&gt &lta/&gt</code> tags can have other tags (for example <code>&ltp&gt &ltp/&gt</code>) inside of them<p>
-                    <p>For example, <a href="./exercises.html">./exercises.html</a></p>
-                </li>
-                <li>
-                    <p>The <code>&ltarea&gt&ltarea/&gt</code> tags are used to add a clickable link to an <strong>area</strong> of the screen. For example, part of this image will bring you to the <code>exercises.html</code> page
-                        <br>
-
-                    <img id="ocean-picture" style: height="300px" width="600px" src="./ocean.png" usemap="#ocean-picture" alt="picture of ocean">
-
-                    <map name="ocean-picture">
-                        <area shape="rect" coords="34,44,270,350" alt="Computer" href="./exercises.html">
-                    </map>
-                </li>
-                <li>
-                    The base tag is a way to set a default href value for all links on the page.
-                </li>
-                <li>
-                    The link tag is most often used for stylesheets and favicons. <code>&ltlink&gt</code> is a self closing tag
-                </li>
-            </ol>
+        <div class="text">
+          <form action="https://formspree.io/f/xnqerdwo" method="POST">
+            <input type="text" placeholder="name" name="name" required />
+            <input type="text" placeholder="email" email="email" required />
+            <button type="submit">Submit</button>
+          </form>
         </div>
+      </div>
+    </div>
 
-        <div class="subtitle">
-            <h2>Media Queries:</h2>
-            <p>There are three types of media queries:</p>
-            <ul>
-                <li><code>"@media screen"</code></li>
-                <li><code>"@media print"</code></li>
-                <li><code>"@media all"</code></li>
-            </ul>
-            <p>"@media screen" works as an if statement</p>
-            <p>if <code>"@ media screen and (min-width: 600px)"
-            </code> is true, apply <code>{flex-direction: row}</code>:</p>
-            <p>"If the viewport width > 600px, the apply flex-direction: row" </p>
-            <p><code>"@ media screen and (min-width: 600px)"</code> and <code>"@ media screen and (max-width: 800px)"</code>, apply <code>"background-color: green"</code>:</p>
-            <p>"If 800px > viewport width > 600px, the apply flex-direction: row" </p>
-        </div>
+    <div class="subtitle">
+      <h2>Transformations, Transitions, and Animations:</h2>
 
-        <div class="subtitle" style="background-color: lightyellow;">
-            <h2>Gradients:</h2>
-            <h3>Three types of gradients:</h3>
-            <ul>
-                <li>Linear Gradients</li>
-                <li>Radial Gradients</li>
-                <li>Conic Gradients</li>
-            </ul>
-            <p>Linear gradients are created through <code>background: linear-gradient([color1], [color2])</code> on an element</p>
-            <div class="gradientBox">
-            </div>
-            <p>This box has <code>"background: linear-gradient(dodgerblue, yellow);"</code></p>
-            <p>To switch the color scheme order we can do <code>"background: linear-gradient(to bottom, dodgerblue, yellow);"</code></p>
-            <div class="gradientBox2"></div>
-            <p>Similarly, to make the color scheme go diagonal we can do <code>"background: linear-gradient(to bottom right, dodgerblue, yellow);"</code></p>
-            <div class="gradientBox3"></div>
+      <div class="subsubtitle">
+        <h3>Transformations:</h3>
+        <p><code>transform: </code> functions()</p>
+        <ul>
+          <li><code>transform: rotate(100deg)</code></li>
+          <li><code>transform: scale(1.5)</code></li>
+          <li><code>transform: skew()</code></li>
+          <li><code>transform: translate()</code></li>
+          <li>These functions are called on <code>[selector]:hover</code></li>
+        </ul>
 
-            <h3>Radial Gradients:</h3>
-            <h3>Conic Gradients:</h3>
+        <div class="rotateBox">Rotate box</div>
+        <div class="scaleBox">Scale box</div>
+        <div class="skewBox">Skew Box</div>
+        <div class="translateBox">TranslateBox</div>
+        <div class="combinedBox">CombinedBox</div>
+      </div>
 
-        </div>
+      <div class="subsubtitle">
+        <h3>3D Transformations:</h3>
+      </div>
+    </div>
 
-        <div class="subtitle">
-            <h2>Tables:</h2>
-            <p>The <code>&lttable&gt&lt/table&gt</code> tags are used for displaying tabular data</p>
-            <p>Tags used inside of <code>&lttable&gt&lt/table&gt</code>  are:</p>
-            <ul>
-                <li><code>&lttr&gt&lttr&gt:</code> "table row"</li>
-                <li><code>&lttd&gt&lttd&gt:</code> "table data cell"</li>
-                <li><code>&ltthead&gt&ltthead&gt:</code> "table header"</li>
-                <li><code>&lttbody&gt&lttbody&gt:</code> "table body"</li>
-                <li><code>&ltth&gt&ltth&gt:</code> "table header element"</li>
+    <div class="subtitle">
+      <h2>Writing Clean, Maintainable CSS</h2>
 
-            </ul>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Contact Type</th>
-                        <th>Value</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Email:</td>
-                        <td>emailaddress@gmail.com</td>
-                    </tr>
-                    <tr>
-                            <td>Phone:</td>
-                            <td>202-456-1111</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+      <div class="subsubtitle">
+        <h3>CSS Best Practices</h3>
+      </div>
 
-        <div class="subtitle">
-            <h2>Forms:</h2>
-            <p>Tags associated with <code>&ltform action=""&gt&lt/form&gt</code>:</p>
-            <ul>
-                <li><code>&ltlabel for="" &gt&ltlabel/&gt</code></li>
-                <li><code>&ltinput type=""/&gt</code></li>
-            </ul>
-            <p>Using</p>
+      <div class="subsubtitle">
+        <h3>Variables</h3>
+      </div>
 
-            <div class="subsubtitle">
-                <form class="styled-by-hand-form" action="">
-                    <div class="form-group">
-                        <label for="Name">Name: </label>
-                        <input class="form-input" id="Name" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="Email">Email:</label>
-                        <input class="form-input" id="Email" type="email">
-                    </div>
-                        <button class="form-button" type="submit">Register</button>
-                        <button class="form-button" type="reset">Clear</button>
-                </form>
-            </div>
-            
-            <div class="subsubtitle">
-                <h3>CSS Frameworks:</h3>
-                <p>If there is any place that you would use a CSS Framework, it is when you need a form</p>
-                <p>Some CSS frameworks are:</p>
-                <ul>
-                    <li>Bootstrap</li>
-                    <li>Foundation</li>
-                    <li>Semantic UI</li>
-                    <li>UI Kit</li>
-                    <li>Materialize</li>
-                    <li>Milligram</li>
-                </ul>
-                <p>Bootstrap form:</p>
-                <form action="">
-                    <div>
-                        <label for="Name">Name: </label>
-                        <input type="text">
-                    </div>
-                    <div>
-                        <label for="Email">Email:</label>
-                        <input type="email">
-                    </div>
-                        <button type="submit">Register</button>
-                        <button type="reset">Clear</button>
+      <div class="subsubtitle">
+        <h3>Object-Oriented CSS</h3>
+      </div>
 
-                        <label for="files" style="background-color: white; cursor: pointer; border: 1px solid black; width: 200px; margin: auto;" class="button"><i class="fa fa-camera"></i></label>
-                        <input id="files" style="visibility: hidden; background-color: white;" type="file" accept="image/*" capture="camera">
-
-                        
-                </form>
-            </div>
-
-            <div class="subsubtitle">
-                <h2>Submitting the Form</h2>
-
-                <div class="text">
-                    <form action="https://formspree.io/f/xnqerdwo" method="POST">
-                        <input type="text" placeholder="name" name="name" required>
-                        <input type="text" placeholder="email" email="email" required>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <div class="subtitle">
-            <h2>Transformations, Transitions, and Animations:</h2>
-
-            <div class="subsubtitle">
-                <h3>Transformations:</h3>
-                <p><code>transform: </code> functions()</p>
-                <ul>
-                    <li><code>transform: rotate(100deg)</code></li>
-                    <li><code>transform: scale(1.5)</code></li>
-                    <li><code>transform: skew()</code></li>
-                    <li><code>transform: translate()</code></li>
-                    <li>These functions are called on <code>[selector]:hover</code></li>
-                </ul>
-                
-                <div class="rotateBox">
-                    Rotate box
-                </div>
-                <div class="scaleBox">
-                    Scale box
-                </div>
-                <div class="skewBox">
-                    Skew Box
-                </div>
-                <div class="translateBox">
-                    TranslateBox
-                </div>
-                <div class="combinedBox">
-                    CombinedBox
-                </div>
-            </div>
-
-            <div class="subsubtitle">
-                <h3>3D Transformations:</h3>
-            </div>
-        </div>
-
-        <div class="subtitle">
-            <h2>Writing Clean, Maintainable CSS</h2>
-
-            <div class="subsubtitle">
-                <h3>CSS Best Practices</h3>
-            </div>
-
-            <div class="subsubtitle">
-                <h3>Variables</h3>
-            </div>
-
-            <div class="subsubtitle">
-                <h3>Object-Oriented CSS</h3>
-            </div>
-
-            <div class="subsubtitle">
-                <h3>BEM</h3>
-            </div>
-        </div>
-
-
-
-
-
-
-</body>
+      <div class="subsubtitle">
+        <h3>BEM</h3>
+      </div>
+    </div>
+  </body>
 </html>
